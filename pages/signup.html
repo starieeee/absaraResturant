@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>បង្កើតគណនី</title>
+    <!-- Style.css -->
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-6.2.0 icon pro/fontawesome-6.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet"> 
+    <!-- Logo -->
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+</head>
+
+<body> 
+    <main class="p-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6">
+                <h4 class="text-center">
+                    បង្កើតគណនី
+                </h4>
+                <form action="" id="signupForm" class="needs-validation" novalidate>
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" required>
+                                <label for="email">អ៊ីមែល</label>
+                                <div class="invalid-feedback">សូមបំពេញអ៊ីមែល</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="firstname" required>
+                                <label for="firstname">នាមខ្លួន</label>
+                                <div class="invalid-feedback">សូមបំពេញនាមខ្លួន</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="lastname" required>
+                                <label for="lastname">នាមត្រកូល</label>
+                                <div class="invalid-feedback">សូមបំពេញនាមត្រកូល</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="password" required>
+                                <label for="password">លេខសម្ងាត់</label>
+                                <div class="invalid-feedback">សូមបំពេញលេខសម្ងាត់</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="repassword" required>
+                                <label for="repassword">បញ្ចាក់លេខសម្ងាត់</label>
+                                <div class="invalid-feedback">សូមបំពេញលេខសម្ងាត់</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex gap-1">
+                                <input type="checkbox" onclick="viewPw()" class="form-check">
+                                បង្ហាញលេខសម្ងាត់
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-danger w-100 py-3" id="signupSubmitBtt"
+                                type="submit">ដាក់បញ្ចូន</button>
+                        </div>
+                        <div class="col-12">
+                            <div class="text-center">
+                               <p>
+                                 មានគណនី? <a href="login.html" class="text-decoration-none text-danger fw-bold">ចូលគណនី</a>
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <!-- <script>
+        const signupSubmitBtt = document
+            .getElementById("signupSubmitBtt")
+            .addEventListener("click", toLogin);
+        function toLogin(e) {
+            e.preventDefault();
+            const form = document.getElementById("signupForm");
+            if (form.checkValidity()) {
+                window.location.href = "login.html";
+            } else {
+                form.classList.add("was-validated");
+            }
+        }
+    </script> -->
+    <script src="../assets/script.js">
+
+    </script>
+
+
+</body>
+
+</html>

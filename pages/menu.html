@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>បញ្ចីមុខម្ហូប</title>
+    <!-- Style.css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-6.2.0 icon pro/fontawesome-6.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- Logo -->
+    <link rel="icon" href="../assets/img/logo.png" type="image/x-icon" />
+</head>
+<style>
+    html {
+        scroll-padding-top: 80px;
+    }
+</style>
+
+<body class="bg">
+    <!-- Button scroll to top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+    <!-- End of Button scroll to top -->
+
+    <!-- Navbar and Hero-->
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 px-lg-5 py-3 py-lg-0 justify-content-around sticky-top">
+        <div class="container">
+            <!-- <i class="fa-solid fa-utensils fs-1 text-danger"></i> -->
+            <a class="navbar-brand" href="indexTwo.html"><img src="../assets/img/logo.png" alt="">អប្សរា</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexTwo.html" aria-current="page">ទំព័រដើម
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">អំពីពួកយើង</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">បញ្ចីមុខម្ហូប</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">ទំនាក់ទំនង</a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-3">
+                    <!-- Dropdown for lg screen -->
+                    <div class="d-none d-lg-block" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i> <span class="accountName"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.html"><i class="fa-regular fa-user"></i>
+                                            គនណី</a></li>
+                                    <li><a class="dropdown-item" href="booking.html"><i
+                                                class="fa-solid fa-calendar-check"></i>
+                                            កក់តុ</a></li>
+                                    <li><a class="dropdown-item" href="historyBooking.html"><i
+                                                class="bi bi-clock-fill"></i>
+                                            ប្រវត្តិកក់តុ</a></li>
+                                    <li><a class="dropdown-item" href="login.html"><i class="bi bi-arrow-bar-left"></i>
+                                            ចាកចេញ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Will show for mobile screen -->
+                    <div class="d-block d-lg-none">
+                        <a class="btn btn-outline-light" href="profile.html"><i class="fa-solid fa-user"></i> <span
+                                class="accountName"></span>
+                        </a>
+                        <a class="btn btn-outline-light" href="booking.html"><i class="fa-solid fa-calendar-check"></i>
+                            Book
+                            Table</a>
+                        <a class="btn btn-outline-light" href="login.html"><i class="bi bi-arrow-bar-left"></i>
+                            ចាកចេញ</a>
+                    </div>
+                    <a id="theme-toggle">
+                        <!-- <span class="text-light">Mode</span> -->
+                        <i class="bi bi-cloud-sun-fill text-light fs-4" id="sun-icon"></i>
+                        <i class="bi bi-cloud-moon-fill text-light fs-4" id="moon-icon" style="display: none;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar and Hero End -->
+
+    <section>
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <ul class="nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="#breakfast">អាហារពេលព្រឹក</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="#lunch">អាហារពេលថ្ងៃ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="#dinner">អាហារពេលល្ងាច</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- breakfast -->
+            <h4 id="breakfast" class="text">
+                អាហារពេលព្រឹក
+            </h4>
+            <hr>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/breakfast/b1.png" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>នំបញ្ចុក</span>
+                                <span class="text-danger">៦០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                នំបញ្ចុក ជាអាហារដែលស្រដៀងគ្នាទៅនិង មីទាញ ឬ គុយទាវ របស់ចិន។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/breakfast/b2.webp" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>គួង</span>
+                                <span class="text-danger">២០០០ រៀល/ដុំ</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                នៅតៃវ៉ាន់ណែមឆៅជាប្រភេទអាហារបរទេស
+                                ហើយប្រជាជនតៃវ៉ាន់ទូទៅទទូលស្គាល់ថាណែមឆៅជាអាហាររបស់វៀតណាម
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 pt-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/breakfast/b3.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>បាយសាច់ជ្រូក</span>
+                                <span class="text-danger">៥០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                បាយសាច់ជ្រូក គឺជាបាយនិងសាច់ជ្រូករបស់ខ្មែរ។
+                                ជាទូទៅវាត្រូវបានគេប្រើជាអាហារពេលព្រឹក។ គ្រឿងផ្សំបាយសាច់ជ្រូកគឺជា៖.
+                                ប្រឡាក់សាច់ជ្រូកដែលបានកាត់ហើយជាបន្ទះជាមួយនឹង; ស្ករត្នោត​; ខ្ទឹម​;
+                                ខ្ទិះដូង​;
+                                ទឹកត្រី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/breakfast/b4.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>គុយទាវ</span>
+                                <span class="text-danger">១២០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                គុយទាវ ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ និងអ្នករស់នៅតំបន់អាស៊ី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 pt-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/breakfast/b5.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>បបរគ្រឿង</span>
+                                <span class="text-danger">៦០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                បបរគ្រឿងមានច្រើនប្រភេទដូចជាបបរគ្រឿងសាច់មាន់ បបរគ្រឿងសាច់ជ្រូក
+                                គ្រឿងក្នុងជ្រូកជាដើម។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/breakfast/b6.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>បាយឆាឡុកឡាក់</span>
+                                <span class="text-danger">១៥០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                ឡុកឡាក់សាច់គោ គឺជា ម្ហូបវៀតណាមដែល បំផុសគំនិតដោយ បារាំង ដែលមាន សាច់គោ ប្រឡាក់
+                                ជាមួយ ត្រសក់ សាឡាត់ ប៉េងប៉ោះ ខ្ទឹមបារាំងក្រហម ម្រេច និង ទឹកស៊ីអ៊ីវ ។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Breakfast -->
+
+            <!-- Lunch -->
+            <h4 id="lunch" class="mt-5 text">
+                អាហារពេលថ្ងៃ
+            </h4>
+            <hr>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/lunch/l1.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>អាមុកត្រី</span>
+                                <span class="text-danger">២៤០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                អាមុកត្រី​ គឺជាមុខម្ហូបមួយដែលប្រជាជនកម្ពុជាចូលចិត្ត និង យកទៅអួតអាងបរទេស។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/lunch/l2.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>ញាំស្វាយ</span>
+                                <span class="text-danger">២០០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                ញាំស្វាយ គឺជាមុខម្ហូបមួយដែលប្រជាជនកម្ពុជាចូលចិត្ត និង យកទៅអួតអាងបរទេស។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 pt-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/lunch/l3.png" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>ទឹកគ្រឿង</span>
+                                <span class="text-danger">២៨០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                ទឹកគ្រឿង គឺជាមុខម្ហូបមួយដែលប្រជាជនកម្ពុជាចូលចិត្ត និង យកទៅអួតអាងបរទេស។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/lunch/l4.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>មាន់អាំងប្រលាក់អំបិលម្ទេស</span>
+                                <span class="text-danger">៣២០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                មាន់អាំងប្រលាក់អំបិលម្ទេស ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                និងអ្នករស់នៅតំបន់អាស៊ី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 pt-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/lunch/l5.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>ប្រហុកអាំងលើជ្រុញ</span>
+                                <span class="text-danger">២៥០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                ប្រហុកអាំងលើជ្រុញ ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                និងអ្នករស់នៅតំបន់អាស៊ី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/lunch/l6.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>ម្ចូរគ្រឿង</span>
+                                <span class="text-danger">១៥០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                ម្ចូរគ្រឿង ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                និងអ្នករស់នៅតំបន់អាស៊ី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Lunch -->
+
+            <!-- Dinner -->
+            <h4 id="dinner" class="mt-5 text">
+                អាហារពេលល្ងាច
+            </h4>
+            <hr>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/dinner/d1.webp" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>ម្ចូរឆ្នាំងដី</span>
+                                <span class="text-danger">៥០០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                ម្ចូរឆ្នាំងដី ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                និងអ្នករស់នៅតំបន់អាស៊ី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/dinner/d2.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>ឡុកឡាក់សាច់គោ</span>
+                                <span class="text-danger">២៤០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                ឡុកឡាក់សាច់គោ ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                និងអ្នករស់នៅតំបន់អាស៊ី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 pt-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/dinner/d3.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>ខាត់ណាទឹកភ្នែក</span>
+                                <span class="text-danger">១៥០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                ខាត់ណាទឹកភ្នែក ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                និងអ្នករស់នៅតំបន់អាស៊ី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/dinner/d4.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>បុកល្ហុង</span>
+                                <span class="text-danger">១២០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                បុកល្ហុង ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                និងអ្នករស់នៅតំបន់អាស៊ី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 pt-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/dinner/d5.jpeg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>ស៊ុបគោ</span>
+                                <span class="text-danger">១៥០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                ស៊ុបគោ ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ និងអ្នករស់នៅតំបន់អាស៊ី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/img/homePage/menu/dinner/d6.jpg" alt=""
+                            class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom text">
+                                <span>ត្រីប្រម៉ាចំហុយ</span>
+                                <span class="text-danger">៣៥០០០ រៀល</span>
+                            </h5>
+                            <small class="fst-italic text">
+                                ត្រីប្រម៉ាចំហុយ ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                និងអ្នករស់នៅតំបន់អាស៊ី។
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row  g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">ហាងរបស់យើង</h4>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">អំពីពួកយើង</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">ទំនាក់ទំនងយើង</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">កក់តុឥឡូវនេះ</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">រក្សាសិទ្ធបញ្ញាត្តិ</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">ទំនាក់ទំនង</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-2"></i>
+                        ផ្លូវ ហាណយ ភ្នំពេញ កម្ពុជា
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-2"></i>
+                        +855 113 446 77
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-2"></i>
+                        info@absara.org
+                    </p>
+                    <div class=" pt-2">
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">ម៉ោងបើក</h4>
+                    <h5 class="text-light fw-normal">ច័ន្ទ - សៅរ៍</h5>
+                    <p>០៧ព្រឹក ដល់ ១០យប់</p>
+                    <h5 class="text-light fw-normal">អាទិត្យ</h5>
+                    <p>០៩ព្រឹក ដល់ ១១យប់</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">
+                        ព័ត៌មានថ្មីៗ
+                    </h4>
+                    <p>
+                        សម្រាប់ការបង្កើតទំនាក់ទំនង និងព័ត៌មានថ្មីៗពីហាងរបស់យើង សូមចុះឈ្មោះនៅខាងក្រោម។
+                    </p>
+                    <div class="position-relative mx-auto">
+                        <input type="text" class="form-control border-danger w-100 py-2 ps-4 pe-5"
+                            placeholder="អ៊ីម៉ែលរបស់អ្នក" />
+                        <button class="btn btn-danger py-2 position-absolute top-0 end-0">
+                            ចុះឈ្មោះ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copy-right">
+                <div class="row">
+                    <div class="col-md-6 col-lg-12 text-center mb-3 mb-md-0">
+                        <p>&copy; ភោជនីយដ្ឋានអប្សរា</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="../assets/script.js"></script>
+</body>
+
+</html>

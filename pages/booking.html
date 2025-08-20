@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>កក់តុ</title>
+    <!-- Style.css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-6.2.0 icon pro/fontawesome-6.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- Logo -->
+    <link rel="icon" href="../assets/img/logo.png" type="image/x-icon" />
+</head>
+<body class="bg">
+    <!-- Button scroll to top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+    <!-- End of Button scroll to top -->
+
+    <!-- Navbar and Hero-->
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 px-lg-5 py-3 py-lg-0 justify-content-around sticky-top">
+        <div class="container">
+            <!-- <i class="fa-solid fa-utensils fs-1 text-danger"></i> -->
+            <a class="navbar-brand" href="indexTwo.html"><img src="../assets/img/logo.png" alt="">អប្សរា</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexTwo.html" aria-current="page">ទំព័រដើម
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">អំពីពួកយើង</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">បញ្ចីមុខម្ហូប</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">ទំនាក់ទំនង</a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-3">
+                    <!-- Dropdown for lg screen -->
+                    <div class="d-none d-lg-block" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i> <span class="accountName"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.html"><i class="fa-regular fa-user"></i>
+                                            គនណី</a></li>
+                                    <li><a class="dropdown-item" href="booking.html"><i
+                                                class="fa-solid fa-calendar-check"></i>
+                                            កក់តុ</a></li>
+                                    <li><a class="dropdown-item" href="historyBooking.html"><i class="bi bi-clock-fill"></i>
+                                            ប្រវត្តិកក់តុ</a></li>
+                                    <li><a class="dropdown-item" href="login.html"><i class="bi bi-arrow-bar-left"></i>
+                                            ចាកចេញ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Will show for mobile screen -->
+                    <div class="d-block d-lg-none">
+                        <a class="btn btn-outline-light" href="profile.html"><i class="fa-solid fa-user"></i> <span
+                                class="accountName"></span>
+                        </a>
+                        <a class="btn btn-outline-light" href="booking.html"><i class="fa-solid fa-calendar-check"></i>
+                            Book
+                            Table</a>
+                        <a class="btn btn-outline-light" href="login.html"><i class="bi bi-arrow-bar-left"></i>
+                            ចាកចេញ</a>
+                    </div>
+                    <a id="theme-toggle">
+                        <!-- <span class="text-light">Mode</span> -->
+                        <i class="bi bi-cloud-sun-fill text-light fs-4" id="sun-icon"></i>
+                        <i class="bi bi-cloud-moon-fill text-light fs-4" id="moon-icon" style="display: none;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar and Hero End -->
+
+    <!-- Main -->
+     <section>
+        <div class="container">
+            <div class="p-5">
+                    <h5 class=" text-danger fw-normal">
+                        កក់តុឥឡូវនេះ
+                    </h5>
+                    <h1 class="mb-4 text">
+                        កក់តាមប្រព័ន្ធអ៊ីនធឺណេត
+                    </h1>
+                    <form action="" id="bookForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="nameBook" placeholder="" required>
+                                    <label for="name">ឈ្មោះរបស់អ្នក</label>
+                                    <div class="invalid-feedback">
+                                        សូមបំពេញឈ្មោះ
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="emailBook" placeholder="" required>
+                                    <label for="email">អ៊ីម៉ែលរបស់អ្នក</label>
+                                    <div class="invalid-feedback">
+                                        សូមបំពេញអ៊ីម៉ែល
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating date" id="date3">
+                                    <input type="datetime-local" class="form-control" id="dateTimeBook" placeholder="ថ្ងៃនិងពេលវេលា"
+                                        data-bs-toggle="#date3" data-toggle="datetimepicker" itemid="datetimepicker" required>
+                                    <label for="date3">ថ្ងៃនិងពេលវេលា</label>
+                                    <div class="invalid-feedback">
+                                        សូមបំពេញថ្ងៃ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select name="" class="form-select" id="select1" required>
+                                        <option value="1">១</option>
+                                        <option value="2">២</option>
+                                        <option value="3">៣</option>
+                                        <option value="4">៤</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <label for="select1">ចំនួនមនុស្ស</label>
+                                    <div class="invalid-feedback">
+                                        សូមបំពេញចំនួនមនុស្ស
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea name="" id="message" class="form-control" placeholder="ការស្នើរសុំពិសេស"
+                                        style="height: 100px;">
+                                    </textarea>
+                                    <label for="message">ការស្នើរសុំពិសេស</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button​ class="btn btn-danger w-100 py-3" type="submit" id="bookSubmitBtn">កក់តុឥឡូវនេះ</button​>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+     </section>
+    <!-- End of Main -->
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row  g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">ហាងរបស់យើង</h4>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">អំពីពួកយើង</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">ទំនាក់ទំនងយើង</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">កក់តុឥឡូវនេះ</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">រក្សាសិទ្ធបញ្ញាត្តិ</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">ទំនាក់ទំនង</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-2"></i>
+                        ផ្លូវ ហាណយ ភ្នំពេញ កម្ពុជា
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-2"></i>
+                        +855 113 446 77
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-2"></i>
+                        info@absara.org
+                    </p>
+                    <div class=" pt-2">
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">ម៉ោងបើក</h4>
+                    <h5 class="text-light fw-normal">ច័ន្ទ - សៅរ៍</h5>
+                    <p>០៧ព្រឹក ដល់ ១០យប់</p>
+                    <h5 class="text-light fw-normal">អាទិត្យ</h5>
+                    <p>០៩ព្រឹក ដល់ ១១យប់</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">
+                        ព័ត៌មានថ្មីៗ
+                    </h4>
+                    <p>
+                        សម្រាប់ការបង្កើតទំនាក់ទំនង និងព័ត៌មានថ្មីៗពីហាងរបស់យើង សូមចុះឈ្មោះនៅខាងក្រោម។
+                    </p>
+                    <div class="position-relative mx-auto">
+                        <input type="text" class="form-control border-danger w-100 py-2 ps-4 pe-5"
+                            placeholder="អ៊ីម៉ែលរបស់អ្នក" />
+                        <button class="btn btn-danger py-2 position-absolute top-0 end-0">
+                            ចុះឈ្មោះ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copy-right">
+                <div class="row">
+                    <div class="col-md-6 col-lg-12 text-center mb-3 mb-md-0">
+                        <p>&copy; ភោជនីយដ្ឋានអប្សរា</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>រមណីដ្ឋានអប្សរា</title>
+    <!-- Style.css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-6.2.0 icon pro/fontawesome-6.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- Logo -->
+    <link rel="icon" href="../assets/img/logo.png" type="image/x-icon" />
+</head>
+
+<body class="bg">
+    <!-- Button scroll to top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+    <!-- End of Button scroll to top -->
+
+    <!-- Navbar and Hero-->
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 px-lg-5 py-3 py-lg-0 justify-content-around sticky-top">
+        <div class="container">
+            <!-- <i class="fa-solid fa-utensils fs-1 text-danger"></i> -->
+            <a class="navbar-brand" href="indexTwo.html"><img src="../assets/img/logo.png" alt="">អប្សរា</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexTwo.html" aria-current="page">ទំព័រដើម
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">អំពីពួកយើង</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">បញ្ចីមុខម្ហូប</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">ទំនាក់ទំនង</a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-3">
+                    <!-- Dropdown for lg screen -->
+                    <div class="d-none d-lg-block" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i> <span class="accountName"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.html"><i class="fa-regular fa-user"></i>
+                                            គនណី</a></li>
+                                    <li><a class="dropdown-item" href="booking.html"><i
+                                                class="fa-solid fa-calendar-check"></i>
+                                            កក់តុ</a></li>
+                                    <li><a class="dropdown-item" href="historyBooking.html"><i class="bi bi-clock-fill"></i>
+                                            ប្រវត្តិកក់តុ</a></li>
+                                    <li><a class="dropdown-item" href="login.html"><i class="bi bi-arrow-bar-left"></i>
+                                            ចាកចេញ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Will show for mobile screen -->
+                    <div class="d-block d-lg-none">
+                        <a class="btn btn-outline-light" href="profile.html"><i class="fa-solid fa-user"></i> <span
+                                class="accountName"></span>
+                        </a>
+                        <a class="btn btn-outline-light" href="booking.html"><i class="fa-solid fa-calendar-check"></i>
+                            Book
+                            Table</a>
+                        <a class="btn btn-outline-light" href="login.html"><i class="bi bi-arrow-bar-left"></i>
+                            ចាកចេញ</a>
+                    </div>
+                    <a id="theme-toggle">
+                        <!-- <span class="text-light">Mode</span> -->
+                        <i class="bi bi-cloud-sun-fill text-light fs-4" id="sun-icon"></i>
+                        <i class="bi bi-cloud-moon-fill text-light fs-4" id="moon-icon" style="display: none;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid position-relative p-0">
+
+        <div class="container-fluid py-5 bg-dark hero-header mb-5">
+            <div class="container my-5 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-3 text-white animated sliderInLeft">
+                            រមណីដ្ឋានអប្សរា
+                        </h1>
+                        <p class="text-light animated sliderInLeft">
+                            សូមស្វាគមន៍មកកាន់រមណីដ្ឋានអប្សរា ដែលផ្តល់ជូននូវបទពិសោធន៍ម្ហូបអាហារដ៏ល្អឥតខ្ចោះ។
+                            យើងមានមុខម្ហូបជាច្រើនដែលត្រូវបានរៀបចំដោយអ្នកចម្អិនអាហារជំនាញរបស់យើង។ មកទស្សនាពួកយើង
+                            និងរីករាយជាមួយម្ហូបដ៏ឆ្ងាញ់របស់យើង។
+                        </p>
+                        <a name="" id="" class="btn btn-danger py-sm-3 px-sm-5 sliderInLeft" href="booking.html"
+                            role="button">កក់តុឥឡូវនេះ</a>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                        <img src="../assets/img/homePage/hero.png" width="490px" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar and Hero End -->
+
+    <!-- Service -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card service-item">
+                        <div class="card-body py-4 text-center hvr-shutter-in-vertical">
+                            <i class="fa fa-3x fa-user-tie mb-4 text-danger"></i>
+                            <h4 class="mb-4">ចុងភៅជំនាញ</h4>
+                            <p>
+                                ចុងភៅសុទ្ធតែមានជំនាញនិងបទពិសោទន៏ដែលអាចធ្វើម្ហូបឈ្ងុយឆ្ងាញ់
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card service-item">
+                        <div class="card-body text-center py-4 hvr-shutter-in-vertical">
+                            <i class="fa fa-3x fa-cart-plus mb-4 text-danger"></i>
+                            <h4 class="mb-4">ការកម្មង់ Online</h4>
+                            <p>
+                                ចុងភៅសុទ្ធតែមានជំនាញនិងបទពិសោទន៏ដែលអាចធ្វើម្ហូបឈ្ងុយឆ្ងាញ់
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card service-item">
+                        <div class="card-body text-center py-4 hvr-shutter-in-vertical">
+                            <i class="fa-solid fa-bowl-food fa-3x mb-4 text-danger"></i>
+                            <h4 class="mb-4">ម្ហូបមានស្ដង់ស្ដារខ្ពស់</h4>
+                            <p>
+                                ចុងភៅសុទ្ធតែមានជំនាញនិងបទពិសោទន៏ដែលអាចធ្វើម្ហូបឈ្ងុយឆ្ងាញ់
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card service-item">
+                        <div class="card-body text-center py-4 hvr-shutter-in-vertical">
+                            <i class="fa fa-3x fa-headset mb-4 text-danger"></i>
+                            <h4 class="mb-4">២៤ម៉ោង ដោះស្រាយបញ្ហា</h4>
+                            <p>
+                                ចុងភៅសុទ្ធតែមានជំនាញនិងបទពិសោទន៏ដែលអាចធ្វើម្ហូបឈ្ងុយឆ្ងាញ់
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Service Section -->
+
+    <!-- About Us -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-start">
+                            <img src="../assets/img/aboutus/homePage/1.jpg" class="img-gluid w-100 rounded" alt="">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img src="../assets/img/aboutus/homePage/2.jpg" class="img-gluid w-75 rounded"
+                                style="margin-top: 93px;" alt="">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img src="../assets/img/aboutus/homePage/3_n.jpg" class="img-gluid w-75 rounded" alt="">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img src="../assets/img/aboutus/homePage/4_n.jpg" class="img-gluid w-100 rounded" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class=" text-start text-danger">
+                        អំពីពួកយើង
+                    </h5>
+                    <h1 class="mb-4 text">សូមស្វាគមន៍ <i class="fa-solid fa-utensils text-danger me-2"></i>មកកាន់អប្សរា
+                    </h1>
+                    <p class="text">
+                        អប្សរា​ជា​ភាវៈ​អរូបី ពួក​គេ​លេច​ចេញ​មក​ជា​ស្ត្រី​ក្មេង​ មាន​រូបសម្រស់​ស្អាត
+                        ដែល​មាន​ភាព​ប៉ិន​ប្រសប់​ក្នុង​សិល្បៈ​របាំ។ អប្សរា​ជាប់​ទាក់​ទង​នឹង​ទឹក
+                        និង​នឹង​ពិធី​បួង​សួង​សុំ​កូន​រឺ​សមត្ថភាព​ផ្លូវ​ភេទ។ ក្នុង​ជំនឿ​ហិន្ទូ
+                        អប្សរា​ថ្នាក់​ទាប​បំផុត​ជួន​កាល​ត្រូវ​គេ​ចាត់​ទុក​ថា ជា​ព្រលឹង​
+                        ដែល​អាច​អន្ទង​មនុស្ស​ប្រុស​អោយ​ទៅ​រក​ក្តី​ស្លាប់​បាន។
+                    </p>
+                    <p class="text">
+                        នៅភោជនីយដ្ឋានរបស់ពួកយើងបានផ្ដល់ជូវនូវម្ភូបខ្មែរជាច្រើនជម្រើសអមជាមួយនឹងការសម្ដែងរបាំអប្សរាដែលស្រស់ស្អាតបំផុត។
+                        អ្នកទាំងអស់គ្នានឹងទទួលបានបទពិសោធន៍ដ៏ល្អៗសម្រាប់ការបរិភោគអាហារនៅហាងរបស់យើង។
+                    </p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center border-start border-5 border-danger px-3">
+                                <h1 class="flex-shrink-0 display-5 text-danger mb-0">
+                                    ៣០
+                                </h1>
+                                <div class="ps-4">
+                                    <p class="mb-1 text">
+                                        ឆ្នាំ
+                                    </p>
+                                    <h6 class="text">
+                                        បទពិសោធន៍ដ
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center border-start border-5 border-danger px-3">
+                                <h1 class="flex-shrink-0 display-5 text-danger mb-0">
+                                    ២៥
+                                </h1>
+                                <div class="ps-4">
+                                    <p class="mb-1 text">
+                                        ចុងភៅជំនាញ
+                                    </p>
+                                    <h6 class="text">
+                                        ល្បីៗ និងមានជំនាញ
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="aboutUs.html" class="btn btn-danger py-3 px-5 mt-2">អានបន្ថែម</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of About -->
+
+    <!-- Menu -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="text-center text-danger fw-normal">
+                    មុខបញ្ចីម្ហូប
+                </h5>
+                <h1 class="mb-5 text">
+                    មុខម្ហូបប្រចាំហាង
+                </h1>
+            </div>
+            <div class="tab-class text-center" data-wow-delay="0.1s">
+                <ul class="nav mb-5 justify-content-center border-bottom" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-breakfast-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast"
+                            aria-selected="true">
+                            <div class="d-flex align-items-center text-start mx-3 pb-3 text-decoration-none">
+                                <i class="fa-light fa-pot-food fa-2x text-danger"></i>
+                                <div class="ps-3">
+                                    <small class="text">
+                                        ពិសេស
+                                    </small>
+                                    <h6 class="mb-0 text">អាហារពេលព្រឹក</h6>
+                                </div>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-launch-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-launch" type="button" role="tab" aria-controls="pills-launch"
+                            aria-selected="false">
+                            <div class="d-flex align-items-center text-start mx-3 pb-3 text-decoration-none">
+                                <i class="fa-light fa-plate-utensils fa-2x text-danger"></i>
+                                <div class="ps-3">
+                                    <small class="text">
+                                        ពិសេស
+                                    </small>
+                                    <h6 class="mb-0 text">អាហារពេលថ្ងៃ</h6>
+                                </div>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-dinner-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner"
+                            aria-selected="false">
+                            <div class="d-flex align-items-center text-start mx-3 pb-3 text-decoration-none">
+                                <i class="fa-light fa-pan-food fa-2x text-danger"></i>
+                                <div class="ps-3">
+                                    <small class="text">
+                                        ពិសេស
+                                    </small>
+                                    <h6 class="mb-0 text">អាហារពេលល្ងាច</h6>
+                                </div>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+                <!-- Tab -->
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Breakfast -->
+                    <div class="tab-pane fade show active p-0" id="pills-breakfast" role="tabpanel"
+                        aria-labelledby="pills-breakfast-tab" tabindex="0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/breakfast/b1.png" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>នំបញ្ចុក</span>
+                                            <span class="text-danger">៦០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            នំបញ្ចុក ជាអាហារដែលស្រដៀងគ្នាទៅនិង មីទាញ ឬ គុយទាវ របស់ចិន។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/breakfast/b2.webp" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>គួង</span>
+                                            <span class="text-danger">២០០០ រៀល/ដុំ</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            នៅតៃវ៉ាន់ណែមឆៅជាប្រភេទអាហារបរទេស
+                                            ហើយប្រជាជនតៃវ៉ាន់ទូទៅទទូលស្គាល់ថាណែមឆៅជាអាហាររបស់វៀតណាម
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 pt-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/breakfast/b3.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>បាយសាច់ជ្រូក</span>
+                                            <span class="text-danger">៥០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            បាយសាច់ជ្រូក គឺជាបាយនិងសាច់ជ្រូករបស់ខ្មែរ។
+                                            ជាទូទៅវាត្រូវបានគេប្រើជាអាហារពេលព្រឹក។ គ្រឿងផ្សំបាយសាច់ជ្រូកគឺជា៖.
+                                            ប្រឡាក់សាច់ជ្រូកដែលបានកាត់ហើយជាបន្ទះជាមួយនឹង; ស្ករត្នោត​; ខ្ទឹម​;
+                                            ខ្ទិះដូង​;
+                                            ទឹកត្រី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/breakfast/b4.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>គុយទាវ</span>
+                                            <span class="text-danger">១២០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            គុយទាវ ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ និងអ្នករស់នៅតំបន់អាស៊ី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 pt-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/breakfast/b5.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>បបរគ្រឿង</span>
+                                            <span class="text-danger">៦០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            បបរគ្រឿងមានច្រើនប្រភេទដូចជាបបរគ្រឿងសាច់មាន់ បបរគ្រឿងសាច់ជ្រូក
+                                            គ្រឿងក្នុងជ្រូកជាដើម។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/breakfast/b6.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>បាយឆាឡុកឡាក់</span>
+                                            <span class="text-danger">១៥០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            ឡុកឡាក់សាច់គោ គឺជា ម្ហូបវៀតណាមដែល បំផុសគំនិតដោយ បារាំង ដែលមាន សាច់គោ ប្រឡាក់
+                                            ជាមួយ ត្រសក់ សាឡាត់ ប៉េងប៉ោះ ខ្ទឹមបារាំងក្រហម ម្រេច និង ទឹកស៊ីអ៊ីវ ។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Breakfast -->
+
+                    <!-- Lunch -->
+                    <div class="tab-pane fade" id="pills-launch" role="tabpanel" aria-labelledby="pills-launch-tab"
+                        tabindex="0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/lunch/l1.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>អាមុកត្រី</span>
+                                            <span class="text-danger">២៤០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            អាមុកត្រី​ គឺជាមុខម្ហូបមួយដែលប្រជាជនកម្ពុជាចូលចិត្ត និង យកទៅអួតអាងបរទេស។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/lunch/l2.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>ញាំស្វាយ</span>
+                                            <span class="text-danger">២០០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            ញាំស្វាយ គឺជាមុខម្ហូបមួយដែលប្រជាជនកម្ពុជាចូលចិត្ត និង យកទៅអួតអាងបរទេស។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 pt-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/lunch/l3.png" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>ទឹកគ្រឿង</span>
+                                            <span class="text-danger">២៨០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            ទឹកគ្រឿង គឺជាមុខម្ហូបមួយដែលប្រជាជនកម្ពុជាចូលចិត្ត និង យកទៅអួតអាងបរទេស។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/lunch/l4.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>មាន់អាំងប្រលាក់អំបិលម្ទេស</span>
+                                            <span class="text-danger">៣២០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            មាន់អាំងប្រលាក់អំបិលម្ទេស ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                            និងអ្នករស់នៅតំបន់អាស៊ី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 pt-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/lunch/l5.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>ប្រហុកអាំងលើជ្រុញ</span>
+                                            <span class="text-danger">២៥០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            ប្រហុកអាំងលើជ្រុញ ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                            និងអ្នករស់នៅតំបន់អាស៊ី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/lunch/l6.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>ម្ចូរគ្រឿង</span>
+                                            <span class="text-danger">១៥០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            ម្ចូរគ្រឿង ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                            និងអ្នករស់នៅតំបន់អាស៊ី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Lunch -->
+
+                    <!-- Diner -->
+                    <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab"
+                        tabindex="0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/dinner/d1.webp" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>ម្ចូរឆ្នាំងដី</span>
+                                            <span class="text-danger">៥០០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            ម្ចូរឆ្នាំងដី ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                            និងអ្នករស់នៅតំបន់អាស៊ី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/dinner/d2.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>ឡុកឡាក់សាច់គោ</span>
+                                            <span class="text-danger">២៤០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            ឡុកឡាក់សាច់គោ ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                            និងអ្នករស់នៅតំបន់អាស៊ី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 pt-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/dinner/d3.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>ខាត់ណាទឹកភ្នែក</span>
+                                            <span class="text-danger">១៥០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            ខាត់ណាទឹកភ្នែក ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                            និងអ្នករស់នៅតំបន់អាស៊ី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/dinner/d4.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>បុកល្ហុង</span>
+                                            <span class="text-danger">១២០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            បុកល្ហុង ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                            និងអ្នករស់នៅតំបន់អាស៊ី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 pt-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/dinner/d5.jpeg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>ស៊ុបគោ</span>
+                                            <span class="text-danger">១៥០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            ស៊ុបគោ ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ និងអ្នករស់នៅតំបន់អាស៊ី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/homePage/menu/dinner/d6.jpg" alt=""
+                                        class="flex-shrink-0 img-fluid rounded" style="height: 100px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom text">
+                                            <span>ត្រីប្រម៉ាចំហុយ</span>
+                                            <span class="text-danger">៣៥០០០ រៀល</span>
+                                        </h5>
+                                        <small class="fst-italic text">
+                                            ត្រីប្រម៉ាចំហុយ ជាប្រភេទអាហារ ដែលពេញនិយម សម្រាប់ប្រជាជនខ្មែរ
+                                            និងអ្នករស់នៅតំបន់អាស៊ី។
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Diner -->
+                </div>
+                <!-- End of Tab -->
+            </div>
+        </div>
+    </div>
+    <!-- End of Menu -->
+
+    <!-- Contact Us -->
+    <div class="container-fluid py-5">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <div class="video">
+                    <button type="button" class="btn-play" data-bs-toggle="modal"
+                        data-src="https://www.youtube.com/embed/RvoGScDDRvk" data-bs-target="#videoMoal"><i
+                            class="bi bi-play-fill fs-1"></i></button>
+                </div>
+            </div>
+            <div class="col-md-6 bg-dark align-items-center">
+                <div class="p-5">
+                    <h5 class=" text-danger fw-normal">
+                        កក់តុឥឡូវនេះ
+                    </h5>
+                    <h1 class="text-light mb-4">
+                        កក់តាមប្រព័ន្ធអ៊ីនធឺណេត
+                    </h1>
+                    <form action="" id="bookForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="nameBook" placeholder="" required>
+                                    <label for="name">ឈ្មោះរបស់អ្នក</label>
+                                    <div class="invalid-feedback">
+                                        សូមបំពេញឈ្មោះ
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="emailBook" placeholder="" required>
+                                    <label for="email">អ៊ីម៉ែលរបស់អ្នក</label>
+                                    <div class="invalid-feedback">
+                                        សូមបំពេញអ៊ីម៉ែល
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating date" id="date3">
+                                    <input type="datetime-local" class="form-control" id="dateTimeBook" placeholder="ថ្ងៃនិងពេលវេលា"
+                                        data-bs-toggle="#date3" data-toggle="datetimepicker" itemid="datetimepicker" required>
+                                    <label for="date3">ថ្ងៃនិងពេលវេលា</label>
+                                    <div class="invalid-feedback">
+                                        សូមបំពេញថ្ងៃ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select name="" class="form-select" id="select1" required>
+                                        <option value="1">១</option>
+                                        <option value="2">២</option>
+                                        <option value="3">៣</option>
+                                        <option value="4">៤</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <label for="select1">ចំនួនមនុស្ស</label>
+                                    <div class="invalid-feedback">
+                                        សូមបំពេញចំនួនមនុស្ស
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea name="" id="message" class="form-control" placeholder="ការស្នើរសុំពិសេស"
+                                        style="height: 100px;">
+                                    </textarea>
+                                    <label for="message">ការស្នើរសុំពិសេស</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button​ class="btn btn-danger w-100 py-3" type="submit" id="bookSubmitBtn">កក់តុឥឡូវនេះ</button​>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="videoMoal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        វីដេអូ
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/RvoGScDDRvk"
+                            data-src="https://www.youtube.com/embed/RvoGScDDRvk" id="video" allowfullscreen
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Contact US -->
+
+    <!-- Team Member Section -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center">
+                <h5 class=" text-center text-danger fw-normal">
+                    សមាជិកក្រុម
+                </h5>
+                <h1 class="mb-5 text">
+                    ចុងភៅរបស់ពួកយើង
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4 hvr-shrink">
+                            <img src="../assets/img/homePage/team/t1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <h5 class="mb-0 text">
+                            ឈ្មោះពេញ
+                        </h5>
+                        <small class="text">ចាស្ទីន</small>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="https://www.facebook.com/" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://x.com/?lang=en" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/?hl=en" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4 hvr-shrink">
+                            <img src="../assets/img/homePage/team/t2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <h5 class="mb-0 text">
+                            ឈ្មោះពេញ
+                        </h5>
+                        <small class="text">ចាស្ទីន</small>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="https://www.facebook.com/" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://x.com/?lang=en" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/?hl=en" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4 hvr-shrink">
+                            <img src="../assets/img/homePage/team/t3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <h5 class="mb-0 text">
+                            ឈ្មោះពេញ
+                        </h5>
+                        <small class="text">ចាស្ទីន</small>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="https://www.facebook.com/" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://x.com/?lang=en" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/?hl=en" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4 hvr-shrink">
+                            <img src="../assets/img/homePage/team/t4.jpg" class="img-fluid" alt="">
+                        </div>
+                        <h5 class="mb-0 text">
+                            ឈ្មោះពេញ
+                        </h5>
+                        <small class="text">ចាស្ទីន</small>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="https://www.facebook.com/" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://x.com/?lang=en" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/?hl=en" class="btn btn-square btn-danger mx-1">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Team Section -->
+
+     <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row  g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">ហាងរបស់យើង</h4>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">អំពីពួកយើង</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">ទំនាក់ទំនងយើង</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">កក់តុឥឡូវនេះ</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger">រក្សាសិទ្ធបញ្ញាត្តិ</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">ទំនាក់ទំនង</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-2"></i>
+                        ផ្លូវ ហាណយ ភ្នំពេញ កម្ពុជា
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-2"></i>
+                        +855 113 446 77
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-2"></i>
+                        info@absara.org
+                    </p>
+                    <div class=" pt-2">
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">ម៉ោងបើក</h4>
+                    <h5 class="text-light fw-normal">ច័ន្ទ - សៅរ៍</h5>
+                    <p>០៧ព្រឹក ដល់ ១០យប់</p>
+                    <h5 class="text-light fw-normal">អាទិត្យ</h5>
+                    <p>០៩ព្រឹក ដល់ ១១យប់</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class=" text-start text-danger fw-normal mb-4">
+                        ព័ត៌មានថ្មីៗ
+                    </h4>
+                    <p>
+                        សម្រាប់ការបង្កើតទំនាក់ទំនង និងព័ត៌មានថ្មីៗពីហាងរបស់យើង សូមចុះឈ្មោះនៅខាងក្រោម។
+                    </p>
+                    <div class="position-relative mx-auto">
+                        <input type="text" class="form-control border-danger w-100 py-2 ps-4 pe-5"
+                            placeholder="អ៊ីម៉ែលរបស់អ្នក" />
+                        <button class="btn btn-danger py-2 position-absolute top-0 end-0">
+                            ចុះឈ្មោះ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copy-right">
+                <div class="row">
+                    <div class="col-md-6 col-lg-12 text-center mb-3 mb-md-0">
+                        <p>&copy; ភោជនីយដ្ឋានអប្សរា</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Footer -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="../assets/script.js"></script>
+</body>
+
+</html>
