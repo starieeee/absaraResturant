@@ -9,24 +9,34 @@
   <img src="https://camo.githubusercontent.com/fd3beee4fe66b5ef0350c5f64d808c9ff12d1a04dcc4a2e36769aff90bdfc5c2/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d7c266d6573736167653d4a41564153435249505426636f6c6f723d336337663564267374796c653d706c6173746963266c6f676f3d6a617661736372697074"/>
 </p>
 <h2>About</h2>
-<p>Built with <b>HTML, CSS, and JavaScript</b> — featuring Chart.js data visuals and a dynamic to-do list.<p>
+<p>Absara is a modern restaurant booking web application built with <b>HTML, CSS, Bootstrap, and JavaScript</b>.  
+It allows users to explore the restaurant, make reservations, and manage their accounts with login/signup features.<p>
 <h2>Features</h2>
 <hr>
-- Chart.js data visualizations
+- Dark mode & animations (AOS)
 <br>
-- Interactive to-do list
+- Session storage for user data
 <br>
-- Responsive UI
-
+- Booking system with CRUD (Create, Read, Update, Delete)
+<br>
+- Authentication: login, signup, logout
+<br>
+- Profile update & delete
 <h2>Lessons Learned</h2>
-- Data rendering with Chart.js
+- Practiced building frontend CRUD features
 <br>
-- DOM manipulation
+- Gained experience with session storage for user management
 <br>
-- Writing clean, reusable JavaScript code
+- Improved skills in authentication flows (login, signup, logout)
+<br>
+- Learned how to update and delete user profiles effectively
+<br>
+- Strengthened understanding of UI/UX design with dark mode & animations
+<br>
+- Improved ability to integrate multiple features into one cohesive project
 <h2>How to run</h2>
 <hr>
-<p>Simply open `index.html` in your browser, or <a href="https://admindashmin.netlify.app/">visit the live site</a></p>
+<p>Simply open `index.html` in your browser, or <a href="https://absara.netlify.app/">visit the live site</a></p>
 <h2>More projects</h2>
 <hr>
 <table>
@@ -40,9 +50,8 @@
       <img width="1900" height="911" alt="Screenshot 2025-08-20 140537" src="https://github.com/user-attachments/assets/cab4ddbf-cbe8-4e69-92c1-b5f09fd38f32" width="100%"/>
     </td>
     <td width="33.33%">
-      <a href="https://absara.netlify.app/">The Absara Resturant</a>
-      <img width="1899" height="910" alt="Screenshot 2025-08-20 142158" src="https://github.com/user-attachments/assets/7d5708e9-a68c-439b-94db-416197f508e2" width="100%"/>
+      <a href="https://absara.netlify.app/">Admin dashboard</a>
+      <img width="1900" height="912" alt="Screenshot 2025-08-20 143453" src="https://github.com/user-attachments/assets/ea497f65-17c4-4478-897b-e3fe566471fb" width="100%"/>
     </td>
   </tr>
-
 </table>
