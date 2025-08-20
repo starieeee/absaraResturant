@@ -9,46 +9,24 @@
   <img src="https://camo.githubusercontent.com/fd3beee4fe66b5ef0350c5f64d808c9ff12d1a04dcc4a2e36769aff90bdfc5c2/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d7c266d6573736167653d4a41564153435249505426636f6c6f723d336337663564267374796c653d706c6173746963266c6f676f3d6a617661736372697074"/>
 </p>
 <h2>About</h2>
-<p>
-Absara is a modern restaurant booking web application built with <b>HTML, CSS, Bootstrap, and JavaScript</b>.  
-It allows users to explore the restaurant, make reservations, and manage their accounts with login/signup features.</p>
+<p>Built with <b>HTML, CSS, and JavaScript</b> — featuring Chart.js data visuals and a dynamic to-do list.<p>
 <h2>Features</h2>
 <hr>
-+ <b>User Authentication</b>
+- Chart.js data visualizations
 <br>
-  - Sign up / Log in / Log out  
-  <br>
-  - Update profile  
-  <br>
-  - Delete profile  
+- Interactive to-do list
 <br>
-+ <b>Booking System</b>
-<br>
-  - Create, Read, Update, Delete (CRUD) reservations
-  <br>
-  - Stores data using <b>SessionStorage<b/>
-<br>
-+ <b>User Experience</b>
-    <br>
-  - Dark mode toggle  
-    <br>
-  - Smooth animations with AOS
-    <br>
-  - Responsive design with Bootstrap 5  
+- Responsive UI
 
 <h2>Lessons Learned</h2>
-- Implement CRUD operations in the browser using JavaScript and sessionStorage.
+- Data rendering with Chart.js
 <br>
-- Enhance user experience with dark mode, smooth animations (AOS), and responsive design using Bootstrap.
+- DOM manipulation
 <br>
-- Build an end-to-end flow for a restaurant: sign up, login, booking, profile update, and account deletion.
-<br>
-- Improve problem-solving skills by debugging login validation and storage-related issues.
-<br>
-- Recognize the importance of data persistence (real databases vs. session storage) and security in real-world applications.
+- Writing clean, reusable JavaScript code
 <h2>How to run</h2>
 <hr>
-<p>Simply open `index.html` in your browser, or <a href="https://absara.netlify.app/">visit the live site</a></p>
+<p>Simply open `index.html` in your browser, or <a href="https://admindashmin.netlify.app/">visit the live site</a></p>
 <h2>More projects</h2>
 <hr>
 <table>
@@ -62,8 +40,9 @@ It allows users to explore the restaurant, make reservations, and manage their a
       <img width="1900" height="911" alt="Screenshot 2025-08-20 140537" src="https://github.com/user-attachments/assets/cab4ddbf-cbe8-4e69-92c1-b5f09fd38f32" width="100%"/>
     </td>
     <td width="33.33%">
-      <a href="https://github.com/starieeee/dashmin.git">Admin Dashboard</a>
-<img width="1900" height="912" alt="Screenshot 2025-08-20 143453" src="https://github.com/user-attachments/assets/7011175a-579b-4ab6-b3ec-675bc343a12b" width="100%"/>
+      <a href="https://absara.netlify.app/">The Absara Resturant</a>
+      <img width="1899" height="910" alt="Screenshot 2025-08-20 142158" src="https://github.com/user-attachments/assets/7d5708e9-a68c-439b-94db-416197f508e2" width="100%"/>
     </td>
   </tr>
+
 </table>
